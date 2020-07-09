@@ -166,11 +166,12 @@
         </article>
 
         <section class="posts">
+<!--            ALT001 - Sehnsucht // To You -->
             <article>
-<!--                <a style="display: block;margin-bottom: 1em;margin-left: auto;margin-right: auto;width:70%;">-->
-                    <img style="display: block;margin-bottom: 1em;margin-left: auto;margin-right: auto;width:70%"
-                         src="images/ALT001_artwork.jpg" alt=""/>
-<!--                </a>-->
+                <!--                <a style="display: block;margin-bottom: 1em;margin-left: auto;margin-right: auto;width:70%;">-->
+                <img style="display: block;margin-bottom: 1em;margin-left: auto;margin-right: auto;width:70%"
+                     src="images/ALT001_artwork.jpg" alt=""/>
+                <!--                </a>-->
                 <!-- Trigger/Open The Modal -->
                 <button id="myBtn">Download</button>
 
@@ -209,6 +210,50 @@
                 </div>
 
             </article>
+<!--            ALT002 - Dark Glow (inc. Mike Dazzer Remix) -->
+            <article>
+                <!--                <a style="display: block;margin-bottom: 1em;margin-left: auto;margin-right: auto;width:70%;">-->
+                <img style="filter: blur(8px);display: block;margin-bottom: 1em;margin-left: auto;margin-right: auto;width:70%"
+                     src="images/ALT002_artwork.jpg" alt=""/>
+                <!--                </a>-->
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn002">Download</button>
+
+                <!-- The Modal -->
+                <div id="myModal002" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span id="close002" class="close">&times;</span>
+                            <h2 style="margin:0;color: white; font-family: 'Circular Bold', Helvetica, sans-serif">A
+                                letter from us</h2>
+                        </div>
+                        <div class="modal-body">  <!--TODO add hyperlinks -->
+                            <p style="padding:1em">You're getting dozens of hours of work for free. <br/>
+                                The only thing we ask from you in return is your support and your email to keep you
+                                updated.<br/>
+                                We'd love it if you could tweet, post, share a stories, tell your friends,
+                                stream it on Spotify or follow us in any of our social media. <br/>
+                                We'll be forever grateful 😃 <br/><br/>
+                                Cheers,<br/>
+                                <b>Dissonance // ALT14 Team</b></p>
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlo1dBXY2I26PwBXweJX7qyJyJfgRCMbzBV8dKBcqOVj8RqQ/viewform?embedded=true"
+                                    width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">
+                                Loading…
+                            </iframe><!--											<form method="post" action="#">-->
+                            <a href="https://drive.google.com/drive/folders/1MalWnpJaloUCGjUnhrRlk5ZIXa-2DBRD?usp=sharing"
+                               target="_blank">
+                                <button>Download</button>
+                            </a>
+<!--                            <a href="https://dissonance.fanlink.to/ALT002"-->
+<!--                               target="_blank">-->
+<!--                                <button>Stream & More</button>-->
+<!--                            </a>-->
+                        </div>
+                    </div>
+                </div>
+
+            </article>
         </section>
     </div>
 </div>
@@ -224,27 +269,40 @@
 <script>
     // Get the modal
     var modal = document.getElementById("myModal");
+    var modal002 = document.getElementById("myModal002");
 
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
+    var btn002 = document.getElementById("myBtn002");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
+    var span002 = document.getElementById("close002");
 
     // When the user clicks the button, open the modal
     btn.onclick = function () {
         modal.style.display = "block";
+    }
+    // When the user clicks the button, open the modal
+    btn002.onclick = function () {
+        modal002.style.display = "block";
     }
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
         modal.style.display = "none";
     }
+    // When the user clicks on <span> (x), close the modal
+    span002.onclick = function () {
+        modal002.style.display = "none";
+    }
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
+        } else if (event.target == modal002) {
+            modal002.style.display = "none";
         }
     }
 </script>
